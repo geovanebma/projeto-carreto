@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fretes e Carretos</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+        	html, body{height: 100%;}
+            header{background: #333; color: #2196f3; width: 100%;}
+            
+            #lista_header li{background: #2196f3; color: #333; display: inline-block; list-style:none;padding:10px;margin:0px;cursor:pointer; margin-top: 5%;}
+            #lista_header li span{margin-top: 25px;}
+            #lista_header li:hover{background: #333; color: #2196f3; display: inline-block; list-style:none;padding:10px;margin-top: 5%;cursor:pointer;border: 1px solid #2196f3;}
+            #lista_header{float: right;}
+            #telaMensagem{float:left; background: #FFF; width: 70%;}
+            #cadastro{background: #2196f3; color: #FFF; width: 100%; height: 100%; padding: 10px; text-align: center; margin: 0 auto;}
+            #cadastro form{text-align: center; padding: 0px 25%;}
+            #navOptions{float:right;}
+            
+            .displayIn{display: inline-block;}
+            .paddingInputs{padding: 1px !important; margin-top: 20px;}
+            .paddingInputs label{font-size: 12px;}
+            .alignCenter{text-align: center;}
+            .height100{height: 100%;}
+            .inputs{padding:5px 9px !important; width:30%; background: #333; color:#2196f3; border: 1px solid #FFF; border-radius: 5px;}
+            .inputs:hover{background: #FFF; color:#2196f3; border: 1px solid #333;}
+            .buttonCadastro{color: #2196f3; background: #333; text-decoration: none; border: 0px; margin-top: 20px; padding: 10px; width: 95%;}
+        </style>
+    </head>
+    <body class="height100">
+        <section>
+            <header>
+		     	<div class="row nopadding">
+					<div class="col-sm-3 nopadding">
+		                 <h2 class="displayIn">CAMF Express</h2>
+		             </div>
+		             <div class="col-sm-9 nopadding">
+		                 <nav class="displayIn" id="navOptions">
+		                     <ul id="lista_header">
+		                         <li><span>Cadastre-se</span></li>
+		                         <li><span>Fazer Login</span></li>
+		                     </ul>
+		                 </nav>
+		             </div>
+				</div>
+		     </header>
+        </section>
+        <section class="height100">
+            <div  id="cadastro" class="height100">
+	            <form action="/metodos" method="post" class="height100">
+	            	<span class="alignCenter">Selecione a modalidade:</span><br><br>
+	            	<div class="row">
+	            		<div class="col-sm-12 paddingInputs">
+	            			<input type="submit" value="Porte Grande" class="displayIn inputs"><br>
+	            			<label>(Caminhões e transporte com capacidade de grande carga.)</label>
+	            		</div>
+	            		<div class="col-sm-12 paddingInputs">
+	            			<input type="submit" value="Porte Médio" class="displayIn inputs"><br>
+	            			<label>(Caminhonete, Furgão e transporte com capacidade média de carga.)</label>
+	            		</div>
+	            		<div class="col-sm-12 paddingInputs">
+	            			<input type="submit" value="Porte Pequeno" class="displayIn inputs"><br>
+	            			<label>(Utilitário leve, operacional de apoio e transporte com capacidade pequena de carga.)</label>
+	            		</div>
+	            		<div class="col-sm-12 paddingInputs">
+	            			<input type="submit" value="Veículo ideal" class="displayIn inputs"><br>
+	            			<label>(Selecione o veículo que se enquadre com as condições de sua carga.)</label>
+	            		</div>
+            		</div>
+	            </form>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fretes e Carretos</title>
+        <meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  	<style>
+            header{background: #333; color: #2196f3; width: 100%;}
+            html,body{
+			 height:100%;
+			}
+			
+            #lista_header li{background: #2196f3; color: #333; display: inline-block; list-style:none;padding:10px;margin:0px;cursor:pointer; margin-top: 5%;}
+            #lista_header li span{margin-top: 25px;}
+            #lista_header li:hover{background: #333; color: #2196f3; display: inline-block; list-style:none;padding:10px;margin-top: 5%;cursor:pointer;border: 1px solid #2196f3;}
+            
+            #lista_header{float: right;}
+            #telaMensagem{float:left; background: #FFF;}
+            #cadastro{background: #2196f3; height: 500px;padding: 10px; text-align: center;}
+            #navOptions{float:right;}
+            
+            .buttonSubmit{background: #333; color: #2196f3; border: 0px; margin-top: 20px;}
+            .objectImage {
+			    width: 100% !important;
+			    height: 500px !important;
+			    object-fit: cover !important;
+			    object-position: center !important;
+			}
+			.nopadding {
+			   padding: 0 !important;
+			   margin: 0 !important;
+			}
+			.height100{height: 100%;}
+            .displayIn{display: inline-block;}
+            .width100{width: 100%;}
+            .alignCenter{text-align: center;}
+            .inputs{padding: 8px 18px !important;}
+            .buttonCadastro{color: #2196f3; background: #333; text-decoration: none; border: 0px; margin-top: 20px; padding: 10px; width: 95%;}
+        </style>
+    </head>
+    <body>
+     <div class="height100">
+	     <header>
+	     	<div class="row nopadding">
+				<div class="col-sm-3 nopadding">
+	                 <h2 class="displayIn">CAMF Express</h2>
+	             </div>
+	             <div class="col-sm-9 nopadding">
+	                 <nav class="displayIn" id="navOptions">
+	                     <ul id="lista_header">
+	                         <li><span>Cadastre-se</span></li>
+	                         <li><span>Fazer Login</span></li>
+	                     </ul>
+	                 </nav>
+	             </div>
+			</div>
+	     </header>
+		<div class="row nopadding">
+			<div class="col-sm-8 nopadding">
+				<div id="telaMensagem">
+			  		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    		<div class="carousel-inner">
+						      <div class="item active">
+						        	<img class="objectImage" src="/imagens/caminhao.png">
+						      </div>
+						      <div class="item">
+						        	<img class="objectImage" src="/imagens/medio.jpg">
+						      </div>
+						      <div class="item">
+						        	<img class="objectImage" src="/imagens/porte_pequeno.jpg">
+						      </div>
+			    		</div>
+				   </div>
+				</div>
+			</div>
+			<div class="col-sm-4 nopadding height100">
+				<div  id="cadastro">
+		            <form action="/validarNumero/redirecionamento" method="post">
+		            	<span class="alignCenter">Cadastre-se agora</span><br><br>
+		                <input type="text" placeholder="Telefone" class="width100 inputs">
+		            	<input type="submit" value="Avançar" id="verificar" class="buttonSubmit">
+		            </form>
+	            </div>
+			</div>
+		</div>
+      </div>
+    </body>
+</html>
